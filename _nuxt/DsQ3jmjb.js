@@ -1,0 +1,1 @@
+import{l as c,m as n,n as s,p as d,T as l,q as i,s as r}from"./BHjHAtGH.js";const C=()=>{const{$firestore:a}=c();return{getCollection:async e=>(await n(s(a,e))).docs.map(t=>({id:t.id,...t.data()})),addCollection:async(e,o)=>(await d(s(a,e),{...o,createdAt:l.fromDate(new Date)})).id,deleteCollection:async(e,o)=>{const t=i(a,e,o);await r(t)}}};export{C as u};
